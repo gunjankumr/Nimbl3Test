@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0BB7691C1D6EC6005FD5C0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BB7681C1D6EC6005FD5C0 /* main.m */; };
+		6E0BB76C1C1D6EC6005FD5C0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BB76B1C1D6EC6005FD5C0 /* AppDelegate.m */; };
+		6E0BB7721C1D6EC6005FD5C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BB7701C1D6EC6005FD5C0 /* Main.storyboard */; };
+		6E0BB7741C1D6EC6005FD5C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BB7731C1D6EC6005FD5C0 /* Images.xcassets */; };
+		6E0BB7771C1D6EC6005FD5C0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E0BB7751C1D6EC6005FD5C0 /* LaunchScreen.xib */; };
+		6E0BB7831C1D6EC6005FD5C0 /* OctaveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BB7821C1D6EC6005FD5C0 /* OctaveTests.m */; };
+		6E0BB7951C1D70E9005FD5C0 /* SurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BB7941C1D70E9005FD5C0 /* SurveyViewController.m */; };
+		6E0BB7981C1D70FE005FD5C0 /* NewSurveyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0BB7971C1D70FE005FD5C0 /* NewSurveyViewController.m */; };
+		6E349B3B1C1FD1D600C35BCB /* SurveyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E349B391C1FD1D600C35BCB /* SurveyTableViewCell.m */; };
+		6E349B3C1C1FD1D600C35BCB /* SurveyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E349B3A1C1FD1D600C35BCB /* SurveyTableViewCell.xib */; };
+		6E349B401C1FD37700C35BCB /* Survey.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E349B3F1C1FD37700C35BCB /* Survey.m */; };
+		6E8B3C581C1D76AA001937AE /* ServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E8B3C571C1D76AA001937AE /* ServiceManager.m */; };
+		8499214ABABA41A00C32B701 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04651F9D3733BEE507ABE25E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E0BB77D1C1D6EC6005FD5C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0BB75B1C1D6EC6005FD5C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0BB7621C1D6EC6005FD5C0;
+			remoteInfo = Octave;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04651F9D3733BEE507ABE25E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		53502C7839B44E3723B5F62F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6E0BB7631C1D6EC6005FD5C0 /* Octave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octave.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0BB7671C1D6EC6005FD5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0BB7681C1D6EC6005FD5C0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6E0BB76A1C1D6EC6005FD5C0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
+		6E0BB76B1C1D6EC6005FD5C0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../AppDelegate.m; sourceTree = "<group>"; };
+		6E0BB7711C1D6EC6005FD5C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E0BB7731C1D6EC6005FD5C0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
+		6E0BB7761C1D6EC6005FD5C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6E0BB77C1C1D6EC6005FD5C0 /* OctaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctaveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0BB7811C1D6EC6005FD5C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0BB7821C1D6EC6005FD5C0 /* OctaveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OctaveTests.m; sourceTree = "<group>"; };
+		6E0BB7931C1D70E9005FD5C0 /* SurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyViewController.h; sourceTree = "<group>"; };
+		6E0BB7941C1D70E9005FD5C0 /* SurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyViewController.m; sourceTree = "<group>"; };
+		6E0BB7961C1D70FE005FD5C0 /* NewSurveyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewSurveyViewController.h; sourceTree = "<group>"; };
+		6E0BB7971C1D70FE005FD5C0 /* NewSurveyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewSurveyViewController.m; sourceTree = "<group>"; };
+		6E349B381C1FD1D600C35BCB /* SurveyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SurveyTableViewCell.h; sourceTree = "<group>"; };
+		6E349B391C1FD1D600C35BCB /* SurveyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SurveyTableViewCell.m; sourceTree = "<group>"; };
+		6E349B3A1C1FD1D600C35BCB /* SurveyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SurveyTableViewCell.xib; sourceTree = "<group>"; };
+		6E349B3E1C1FD37700C35BCB /* Survey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Survey.h; sourceTree = "<group>"; };
+		6E349B3F1C1FD37700C35BCB /* Survey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Survey.m; sourceTree = "<group>"; };
+		6E8B3C551C1D76AA001937AE /* APIPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIPath.h; sourceTree = "<group>"; };
+		6E8B3C561C1D76AA001937AE /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
+		6E8B3C571C1D76AA001937AE /* ServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceManager.m; sourceTree = "<group>"; };
+		DBBE62BDA3265DF418E7FCCE /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0BB7601C1D6EC6005FD5C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8499214ABABA41A00C32B701 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0BB7791C1D6EC6005FD5C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AE45662B12ADABF7983133C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04651F9D3733BEE507ABE25E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E0BB75A1C1D6EC6005FD5C0 = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7651C1D6EC6005FD5C0 /* Octave */,
+				6E0BB77F1C1D6EC6005FD5C0 /* OctaveTests */,
+				6E0BB7641C1D6EC6005FD5C0 /* Products */,
+				F9E2860B286BC01CF9A45E9A /* Pods */,
+				0AE45662B12ADABF7983133C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E0BB7641C1D6EC6005FD5C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7631C1D6EC6005FD5C0 /* Octave.app */,
+				6E0BB77C1C1D6EC6005FD5C0 /* OctaveTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E0BB7651C1D6EC6005FD5C0 /* Octave */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB78C1C1D6EEF005FD5C0 /* Classes */,
+				6E0BB7661C1D6EC6005FD5C0 /* Supporting Files */,
+			);
+			path = Octave;
+			sourceTree = "<group>";
+		};
+		6E0BB7661C1D6EC6005FD5C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7671C1D6EC6005FD5C0 /* Info.plist */,
+				6E0BB7681C1D6EC6005FD5C0 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E0BB77F1C1D6EC6005FD5C0 /* OctaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7821C1D6EC6005FD5C0 /* OctaveTests.m */,
+				6E0BB7801C1D6EC6005FD5C0 /* Supporting Files */,
+			);
+			path = OctaveTests;
+			sourceTree = "<group>";
+		};
+		6E0BB7801C1D6EC6005FD5C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7811C1D6EC6005FD5C0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6E0BB78C1C1D6EEF005FD5C0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB78D1C1D6F11005FD5C0 /* App Manager */,
+				6E0BB7911C1D6FA7005FD5C0 /* GUI */,
+				6E0BB78E1C1D6F78005FD5C0 /* Global */,
+				6E0BB78F1C1D6F78005FD5C0 /* Modules */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6E0BB78D1C1D6F11005FD5C0 /* App Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB76A1C1D6EC6005FD5C0 /* AppDelegate.h */,
+				6E0BB76B1C1D6EC6005FD5C0 /* AppDelegate.m */,
+			);
+			path = "App Manager";
+			sourceTree = "<group>";
+		};
+		6E0BB78E1C1D6F78005FD5C0 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				6E349B3D1C1FD35900C35BCB /* Model */,
+				6E8B3C541C1D76AA001937AE /* Service Manager */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		6E0BB78F1C1D6F78005FD5C0 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7921C1D70C0005FD5C0 /* Survey */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		6E0BB7911C1D6FA7005FD5C0 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7701C1D6EC6005FD5C0 /* Main.storyboard */,
+				6E0BB7731C1D6EC6005FD5C0 /* Images.xcassets */,
+				6E0BB7751C1D6EC6005FD5C0 /* LaunchScreen.xib */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		6E0BB7921C1D70C0005FD5C0 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				6E0BB7931C1D70E9005FD5C0 /* SurveyViewController.h */,
+				6E0BB7941C1D70E9005FD5C0 /* SurveyViewController.m */,
+				6E349B381C1FD1D600C35BCB /* SurveyTableViewCell.h */,
+				6E349B391C1FD1D600C35BCB /* SurveyTableViewCell.m */,
+				6E349B3A1C1FD1D600C35BCB /* SurveyTableViewCell.xib */,
+				6E0BB7961C1D70FE005FD5C0 /* NewSurveyViewController.h */,
+				6E0BB7971C1D70FE005FD5C0 /* NewSurveyViewController.m */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		6E349B3D1C1FD35900C35BCB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6E349B3E1C1FD37700C35BCB /* Survey.h */,
+				6E349B3F1C1FD37700C35BCB /* Survey.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6E8B3C541C1D76AA001937AE /* Service Manager */ = {
+			isa = PBXGroup;
+			children = (
+				6E8B3C551C1D76AA001937AE /* APIPath.h */,
+				6E8B3C561C1D76AA001937AE /* ServiceManager.h */,
+				6E8B3C571C1D76AA001937AE /* ServiceManager.m */,
+			);
+			path = "Service Manager";
+			sourceTree = "<group>";
+		};
+		F9E2860B286BC01CF9A45E9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBBE62BDA3265DF418E7FCCE /* Pods.debug.xcconfig */,
+				53502C7839B44E3723B5F62F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0BB7621C1D6EC6005FD5C0 /* Octave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0BB7861C1D6EC6005FD5C0 /* Build configuration list for PBXNativeTarget "Octave" */;
+			buildPhases = (
+				A87A956285236ADE8E0BBEF8 /* Check Pods Manifest.lock */,
+				6E0BB75F1C1D6EC6005FD5C0 /* Sources */,
+				6E0BB7601C1D6EC6005FD5C0 /* Frameworks */,
+				6E0BB7611C1D6EC6005FD5C0 /* Resources */,
+				F2E9F21008F0FC23798C9E04 /* Embed Pods Frameworks */,
+				515223D1DC555EB5F9B98850 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octave;
+			productName = Octave;
+			productReference = 6E0BB7631C1D6EC6005FD5C0 /* Octave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E0BB77B1C1D6EC6005FD5C0 /* OctaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0BB7891C1D6EC6005FD5C0 /* Build configuration list for PBXNativeTarget "OctaveTests" */;
+			buildPhases = (
+				6E0BB7781C1D6EC6005FD5C0 /* Sources */,
+				6E0BB7791C1D6EC6005FD5C0 /* Frameworks */,
+				6E0BB77A1C1D6EC6005FD5C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0BB77E1C1D6EC6005FD5C0 /* PBXTargetDependency */,
+			);
+			name = OctaveTests;
+			productName = OctaveTests;
+			productReference = 6E0BB77C1C1D6EC6005FD5C0 /* OctaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E0BB75B1C1D6EC6005FD5C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Sujeet Sinha";
+				TargetAttributes = {
+					6E0BB7621C1D6EC6005FD5C0 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					6E0BB77B1C1D6EC6005FD5C0 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 6E0BB7621C1D6EC6005FD5C0;
+					};
+				};
+			};
+			buildConfigurationList = 6E0BB75E1C1D6EC6005FD5C0 /* Build configuration list for PBXProject "Octave" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E0BB75A1C1D6EC6005FD5C0;
+			productRefGroup = 6E0BB7641C1D6EC6005FD5C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0BB7621C1D6EC6005FD5C0 /* Octave */,
+				6E0BB77B1C1D6EC6005FD5C0 /* OctaveTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E0BB7611C1D6EC6005FD5C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E349B3C1C1FD1D600C35BCB /* SurveyTableViewCell.xib in Resources */,
+				6E0BB7721C1D6EC6005FD5C0 /* Main.storyboard in Resources */,
+				6E0BB7771C1D6EC6005FD5C0 /* LaunchScreen.xib in Resources */,
+				6E0BB7741C1D6EC6005FD5C0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0BB77A1C1D6EC6005FD5C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		515223D1DC555EB5F9B98850 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A87A956285236ADE8E0BBEF8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F2E9F21008F0FC23798C9E04 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0BB75F1C1D6EC6005FD5C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0BB7951C1D70E9005FD5C0 /* SurveyViewController.m in Sources */,
+				6E349B401C1FD37700C35BCB /* Survey.m in Sources */,
+				6E349B3B1C1FD1D600C35BCB /* SurveyTableViewCell.m in Sources */,
+				6E0BB76C1C1D6EC6005FD5C0 /* AppDelegate.m in Sources */,
+				6E8B3C581C1D76AA001937AE /* ServiceManager.m in Sources */,
+				6E0BB7691C1D6EC6005FD5C0 /* main.m in Sources */,
+				6E0BB7981C1D70FE005FD5C0 /* NewSurveyViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0BB7781C1D6EC6005FD5C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0BB7831C1D6EC6005FD5C0 /* OctaveTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E0BB77E1C1D6EC6005FD5C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0BB7621C1D6EC6005FD5C0 /* Octave */;
+			targetProxy = 6E0BB77D1C1D6EC6005FD5C0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E0BB7701C1D6EC6005FD5C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0BB7711C1D6EC6005FD5C0 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		6E0BB7751C1D6EC6005FD5C0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0BB7761C1D6EC6005FD5C0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E0BB7841C1D6EC6005FD5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6E0BB7851C1D6EC6005FD5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E0BB7871C1D6EC6005FD5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBBE62BDA3265DF418E7FCCE /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = Octave/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nimbl3.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		6E0BB7881C1D6EC6005FD5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53502C7839B44E3723B5F62F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = Octave/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Nimbl3.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		6E0BB78A1C1D6EC6005FD5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OctaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appster.-.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octave.app/Octave";
+			};
+			name = Debug;
+		};
+		6E0BB78B1C1D6EC6005FD5C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OctaveTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.appster.-.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octave.app/Octave";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0BB75E1C1D6EC6005FD5C0 /* Build configuration list for PBXProject "Octave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0BB7841C1D6EC6005FD5C0 /* Debug */,
+				6E0BB7851C1D6EC6005FD5C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0BB7861C1D6EC6005FD5C0 /* Build configuration list for PBXNativeTarget "Octave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0BB7871C1D6EC6005FD5C0 /* Debug */,
+				6E0BB7881C1D6EC6005FD5C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0BB7891C1D6EC6005FD5C0 /* Build configuration list for PBXNativeTarget "OctaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0BB78A1C1D6EC6005FD5C0 /* Debug */,
+				6E0BB78B1C1D6EC6005FD5C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E0BB75B1C1D6EC6005FD5C0 /* Project object */;
+}

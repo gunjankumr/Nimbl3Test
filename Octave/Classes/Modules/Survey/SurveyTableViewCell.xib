@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIViewController">
+            <connections>
+                <outlet property="view" destination="KGk-i7-Jjw" id="Xqe-TW-dwl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SurveyTableViewCell" rowHeight="480" id="KGk-i7-Jjw" customClass="SurveyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="479.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TF-mQ-suD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <color key="backgroundColor" red="0.31924389910000001" green="0.70030981790000002" blue="0.98757853839999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wzu-XV-5AP">
+                        <rect key="frame" x="84" y="367" width="152" height="30"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cr-Az-CDn">
+                                <rect key="frame" x="0.0" y="0.0" width="152" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.10983690660000001" blue="0.1470722227" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="2Yx-iy-r7d"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="2pK-v1-GwN"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="152" id="9bH-uO-dZd"/>
+                                    <constraint firstAttribute="height" constant="30" id="vGY-tw-ArN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Take the survey">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="moveToNewSurveyScreen:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HnS-hD-MiK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mii-ej-1Li">
+                        <rect key="frame" x="8" y="54" width="304" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="WEn-Gu-1ec"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="120-hg-xpv">
+                        <rect key="frame" x="8" y="101" width="304" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="yrQ-Xx-JYm"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mii-ej-1Li" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="2U1-oW-tdL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="wzu-XV-5AP" secondAttribute="bottom" constant="74.5" id="D39-4n-Rut"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="4TF-mQ-suD" secondAttribute="bottom" constant="-8.5" id="KGD-3G-9dk"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="4TF-mQ-suD" secondAttribute="trailing" constant="-8" id="NuJ-1g-AeO"/>
+                    <constraint firstItem="120-hg-xpv" firstAttribute="top" secondItem="mii-ej-1Li" secondAttribute="bottom" constant="15" id="SZy-yo-3F6"/>
+                    <constraint firstItem="mii-ej-1Li" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="46" id="d7u-mJ-A3P"/>
+                    <constraint firstItem="4TF-mQ-suD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-8" id="eLh-MA-Crg"/>
+                    <constraint firstItem="120-hg-xpv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="lhx-OF-sUY"/>
+                    <constraint firstItem="4TF-mQ-suD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="pNm-fv-Rj8"/>
+                    <constraint firstItem="mii-ej-1Li" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="uBi-H9-CTx"/>
+                    <constraint firstItem="120-hg-xpv" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="wX1-8H-MQs"/>
+                    <constraint firstItem="wzu-XV-5AP" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="xJv-mO-Xdw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.31924389910000001" green="0.70030981790000002" blue="0.98757853839999998" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="imgViewSurvey" destination="4TF-mQ-suD" id="mju-Ne-oDP"/>
+                <outlet property="lblDesc" destination="120-hg-xpv" id="fEm-Lx-9df"/>
+                <outlet property="lblTitle" destination="mii-ej-1Li" id="1oR-E6-P4j"/>
+            </connections>
+            <point key="canvasLocation" x="245" y="279"/>
+        </tableViewCell>
+    </objects>
+</document>
